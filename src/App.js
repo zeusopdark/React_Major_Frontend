@@ -38,7 +38,7 @@ import Contact from './component/Layout/Contact/Contact';
 import PageNotFound from './component/Layout/PageNotFound/PageNotFound';
 
 const App = () => {
-  const url = "https://myProjectApi.onrender.com"
+  const url = "https://myprojectapi-60w2.onrender.com"
   const [stripeApiKey, setStripeApiKey] = useState("");
 
   async function getStripeApiKey() {

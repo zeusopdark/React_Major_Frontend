@@ -6,7 +6,7 @@ import {
 } from "../constants/userConstant"
 import axios from "axios"
 
-const url = "https://myProjectApi.onrender.com"
+const url = "https://myprojectapi-60w2.onrender.com"
 export const login = (email, password) => async (dispatch) => {
     try {
         dispatch({ type: LOGIN_REQUEST });

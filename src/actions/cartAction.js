@@ -1,7 +1,7 @@
 import axios from "axios";
 import { ADD_TO_CART, REMOVE_CART_ITEM, SAVE_SHIPPING_INFO } from "../constants/cartConstant"
 
-const url = "https://myProjectApi.onrender.com"
+const url = "https://myprojectapi-60w2.onrender.com"
 //Add to cart
 export const addItemsToCart = (id, quantity) => async (dispatch, getState) => {
 
