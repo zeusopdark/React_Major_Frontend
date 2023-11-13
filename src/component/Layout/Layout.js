@@ -14,7 +14,7 @@ const Layout = () => {
     return (
         <>
             <Header />
-            {isAuthenticated && <UserOptions user={user} />}
+            {isAuthenticated === true && <UserOptions user={user} />}
             <Outlet />
             <Footer />
         </>

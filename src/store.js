@@ -42,7 +42,7 @@ const store = configureStore({
     middleware: getDefaultMiddleware =>
         getDefaultMiddleware().concat(thunk),
 
-    devTools: true
+    devTools: false
 })
 
 

@@ -23,7 +23,7 @@ const UserOptions = ({ user }) => {
         { icon: <ExitToAppIcon />, name: "Logout", func: logoutUser },
     ]
 
-    if (user.role === "admin") {
+    if (user && user.role === "admin") {
         options.unshift({ icon: <DashboardIcon />, name: "Dashboard", func: dashboard }) //shift this in the first index.
     }
 
@@ -55,7 +55,7 @@ const UserOptions = ({ user }) => {
                 open={open}
                 direction='down'
                 style={{ zIndex: "11" }}
-                icon={<img className='speedDialIcon' src={user.avatar.url ? user.avatar.url : "./Profile.png"} alt="Profile" />}
+                icon={<img className='speedDialIcon' src={user.avatar && user.avatar.url ? user.avatar.url : "./Profile.png"} alt="Profile" />}
             >
                 {options.map((item) => (
                     <SpeedDialAction

@@ -38,7 +38,7 @@ import Contact from './component/Layout/Contact/Contact';
 import PageNotFound from './component/Layout/PageNotFound/PageNotFound';
 
 const App = () => {
-  const url = "http://localhost:3500"
+  const url = "https://myProjectApi.onrender.com"
   const [stripeApiKey, setStripeApiKey] = useState("");
 
   async function getStripeApiKey() {
@@ -65,14 +65,14 @@ const App = () => {
     getStripeApiKey();
   }, []);
   // handle right click.
-  useEffect(() => {
-    document.addEventListener('contextmenu', e => e.preventDefault());
+  // useEffect(() => {
+  //   document.addEventListener('contextmenu', e => e.preventDefault());
 
-    // Clean up the event listener when the component unmounts
-    return () => {
-      document.removeEventListener('contextmenu', e => e.preventDefault());
-    };
-  }, []);
+  //   // Clean up the event listener when the component unmounts
+  //   return () => {
+  //     document.removeEventListener('contextmenu', e => e.preventDefault());
+  //   };
+  // }, []);
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
