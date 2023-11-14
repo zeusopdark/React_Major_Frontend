@@ -6,7 +6,7 @@ import {
 import axios from "axios";
 
 export const createOrder = (order) => async (dispatch) => {
-    const url = "https://myprojectapi-60w2.onrender.com"
+    const url = "https://myprojectapi-black.vercel.app"
     const token = localStorage.getItem("token")
     try {
         dispatch({ type: CREATE_ORDER_REQUEST })
@@ -22,7 +22,7 @@ export const createOrder = (order) => async (dispatch) => {
 }
 
 export const myOrders = () => async (dispatch) => {
-    const url = "https://myprojectapi-60w2.onrender.com"
+    const url = "https://myprojectapi-black.vercel.app"
     const token = localStorage.getItem("token")
     try {
         dispatch({ type: MY_ORDERS_REQUEST })
@@ -38,7 +38,7 @@ export const myOrders = () => async (dispatch) => {
 }
 
 export const getOrderDetails = (id) => async (dispatch) => {
-    const url = "https://myprojectapi-60w2.onrender.com"
+    const url = "https://myprojectapi-black.vercel.app"
     const token = localStorage.getItem("token")
     try {
         dispatch({ type: ORDER_DETAILS_REQUEST })
@@ -54,7 +54,7 @@ export const getOrderDetails = (id) => async (dispatch) => {
 }
 //Get all orders admin 
 export const getAllOrders = () => async (dispatch) => {
-    const url = "https://myprojectapi-60w2.onrender.com"
+    const url = "https://myprojectapi-black.vercel.app"
     const token = localStorage.getItem("token")
     try {
         dispatch({ type: ALL_ORDERS_REQUEST })
@@ -71,7 +71,7 @@ export const getAllOrders = () => async (dispatch) => {
 
 // Update Order
 export const updateOrder = (id, order) => async (dispatch) => {
-    const url = "https://myprojectapi-60w2.onrender.com"
+    const url = "https://myprojectapi-black.vercel.app"
 
     const token = localStorage.getItem("token")
     try {
@@ -100,7 +100,7 @@ export const updateOrder = (id, order) => async (dispatch) => {
 
 // Delete Order
 export const deleteOrder = (id) => async (dispatch) => {
-    const url = "https://myprojectapi-60w2.onrender.com"
+    const url = "https://myprojectapi-black.vercel.app"
 
     const token = localStorage.getItem("token")
     try {
